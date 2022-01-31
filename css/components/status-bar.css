@@ -1,0 +1,32 @@
+.status-bar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 5px 3px;
+}
+/* hack!! 1.모든 div가운데 배치,,전체적으로 padding */
+.status-bar__column {
+  width: 33%;
+}
+/* hack!! 2.모든 div가 width 33% 가지게 배치 */
+.status-bar__column:nth-child(2) {
+  display: flex;
+  justify-content: center;
+}
+/* hack!! 3.2번째 div가운데 배치 */
+.status-bar__column:last-child {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+/* hack!! 4.마지막 div오른쪽 끝에 배치하고 아이콘 정렬 */
+.status-bar__column:first-child span {
+  margin-right: 5px;
+}
+/*  No Service와 와이파이 아이콘사이에 여백 */
+.status-bar__column .fa-battery-full {
+  margin: 0px 5px;
+}
+/* 베터리랑 번개 아이콘 여백 */
